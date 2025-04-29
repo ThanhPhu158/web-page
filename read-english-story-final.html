@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌸 Read English Story 🌸</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff9f5;
+      overflow: hidden;
+    }
+
+    #scrollContainer {
+      height: 100%;
+      overflow-y: auto;
+      scroll-behavior: smooth;
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .page-title {
+      font-size: 2.8rem;
+      color: #ff6f61;
+      text-shadow: 1px 1px 2px #eee;
+      margin-top: 20px;
+      text-align: center;
+      width: 100%;
+      max-width: 700px;
+    }
+
+    .intro {
+      text-align: center;
+      font-size: 1.3rem;
+      color: #444;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    .sticky-navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      padding: 20px 0;
+      background: none;
+    }
+
+    .sticky-navbar-inner {
+      background-color: #fff3ee;
+      border-radius: 15px;
+      padding: 10px 30px;
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+      font-size: 1.6rem;
+      max-width: 700px;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .sticky-navbar-inner a {
+      text-decoration: none;
+      color: #ff6f61;
+      font-weight: bold;
+    }
+
+    .sticky-navbar-inner a:hover {
+      text-decoration: underline;
+    }
+
+    .section {
+      width: 100%;
+      max-width: 700px;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 25px 20px;
+      text-align: center;
+    }
+
+    .section p:first-child {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .section a {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #175bb9;
+    }
+
+    .section img {
+      width: 300px;
+      max-width: 90%;
+      margin-top: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .book-section {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 100%;
+      align-items: center;
+    }
+
+    .book {
+      width: 100%;
+      max-width: 700px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .book img {
+      width: 300px;
+      max-width: 100%;
+    }
+
+    .book a {
+      display: block;
+      margin-top: 10px;
+      font-size: 1rem;
+      color: #175bb9;
+      text-decoration: none;
+    }
+
+    .book a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .page-title {
+        font-size: 2rem;
+      }
+
+      .intro {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+
+      .section, .book {
+        width: 95%;
+        padding: 20px 15px;
+      }
+
+      .sticky-navbar-inner {
+        gap: 20px;
+        font-size: 1.2rem;
+        padding: 8px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="scrollContainer">
+    <h1 class="page-title">🌸 English Story Corner 🌸</h1>
+
+    <div class="intro">
+      <p>👋 Hello guys! Welcome to my cozy little corner of English stories. 🌈</p>
+      <p>Here, you can support me if you could! And You can enjoy reading and exploring these books! I think they're suitable for children and those who are just starting to learn English! 📚💖</p>
+      <p>Thanks for stopping by and being part of this lovely journey! 🎉</p>
+    </div>
+
+    <nav class="sticky-navbar">
+      <div class="sticky-navbar-inner">
+        <a href="#paypal">PayPal</a>
+        <a href="#banking">Banking</a>
+        <a href="#books">Books</a>
+      </div>
+    </nav>
+
+    <div id="paypal" class="section">
+      <p>💳 Support me via PayPal:</p>
+      <p><strong><a href="https://paypal.me/yourname" target="_blank">paypal.me/yourname</a></strong></p>
+    </div>
+
+    <div id="banking" class="section">
+      <p>📲 Or use my banking QR code below:</p>
+      <img src="result.png" alt="Bank QR Code" />
+    </div>
+
+    <div id="books" class="book-section">
+      <h2 style="color: #ff6f61; text-align: center;">📚 Funny and lovely books I recommend</h2>
+
+      <div class="book">
+        <img src="result1.png" alt="Book 1">
+        <a href="https://yourlink1.com" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
+      </div>
+
+      <div class="book">
+        <img src="result2.png" alt="Book 2">
+        <a href="https://yourlink2.com" target="_blank">Click here for buying this book (only shipping in Viet Nam)</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
