@@ -1,4 +1,4 @@
-# 🌐 My Web Page
+# 🌐 English Story Corner
 
 Welcome to my youtube channel web page! This is a simple, responsive website built with HTML, CSS.
 
